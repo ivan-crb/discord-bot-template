@@ -5,7 +5,7 @@ const Discord = require('discord.js');
 
 const token = process.env["CLIENT_TOKEN"]
 
-// Adds all intents to the client initialization
+// Adds all intents to the client initialization (bad practice, but works for small bots)
 const flags = [];
 for (flag in Discord.Intents.FLAGS) flags.push(Discord.Intents.FLAGS[flag]);
 
