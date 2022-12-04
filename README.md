@@ -10,18 +10,18 @@ A ready-to-go template for a basic discord bot
 - [Client id](#client-id)
 - [Guild id](#guild-id)
 
-## Features [⬆️](#index)
+## Features[⬆️](#index)
 
 - Built-in slash command handler
 - Dynamic `/help` command
 - Easy to deploy and delete slash commands
 
-## Requirements [⬆️](#index)
+## Requirements[⬆️](#index)
 - Node (16.6 or higher)
 - Git
 - NPM
 
-## Setup [⬆️](#index)
+## Setup[⬆️](#index)
 
 1. Create a directory for the app and clone the repository to it:
 ```bash
