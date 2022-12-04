@@ -4,10 +4,13 @@ A ready-to-go template for a basic discord bot
 ## Index
 - [Features](#features)
 - [Requirements](#requirements)
-
+- [Setup](#setup)
 
 ## Features
-- Slash command only application
+
+- Built-in slash command handler
+- Dynamic `/help` command
+- Easy to deploy and delete slash commands
 
 ## Requirements
 - Node (16.6 or higher)
@@ -33,9 +36,9 @@ git push -u origin main;
 ```
 
 3. Create a `.env` file (inside the `src` directory) and add the following environment variables:
-    - CLIENT_TOKEN: The private token Discord provides to login your bot. THIS IS A FOOTNOTE
-    - CLIENT_ID: The Discord id of your bot.
-    - GUILD_ID: The Discord id of the server to test commands in.
+    - [CLIENT_TOKEN](#client-token): The private token Discord provides to login your bot.
+    - [CLIENT_ID](#client-id): The Discord id of your bot.
+    - [GUILD_ID](#guild-id): The Discord id of the server to test commands in.
 
 The .env should end up looking similar to this:
 ```bash
@@ -67,32 +70,52 @@ Finally, `delete-commands.js` deletes all slash commands for all servers (incase
 
 ## Invite link
 
+To get the invite link for the bot, just copy the following url and replace the words between `<` & `>` with the appropiate values.
+```
+https://discord.com/oauth2/authorize?client_id=<CLIENT_ID>&permissions=<PERMISSIONS_INTEGER>&scope=bot+applications.commands
+```
+- [CLIENT_ID](#client-id): The private token Discord provides to login your bot.
+- PERMISSIONS_INTEGER: The number that represents what permissions your bot needs to have when joining a server (Get it at [Discord Developer Portal](https://discord.com/developers/applications) > ***Your-App*** > ***Bot*** > ***Bot Permissions***).
+
+For easier invitation of the bot to new servers, it is recommended to enable In-app Authorization at [Discord Developer Portal](https://discord.com/developers/applications) > ***Your-App*** > ***OAuth2*** > ***General*** > ***Default Authorization Link*** > ***Authorization Method*** > ***In-app Authorization*** (choose both `bot` and `applications.commands` in the ***Scopes*** section). This allows inviting the bot to new servers from the Discord app itself.
+
+
+## Client token
+
+1. Select your application in the [Discord Developer Portal](https://discord.com/developers/applications).
+2. Head over to the ***Bot*** section.
+3. Create a bot with the ***Add Bot*** button (if you haven't already).
+4. Click on ***Reset Token*** and copy the new ***TOKEN***.
+Take into account that the token can only be viewed once, on creation, so store it somewhere safe (you can access it from the `.env` file) if you ever need it in the future.
+
+## Client id
+
+1. Select your application in the [Discord Developer Portal](https://discord.com/developers/applications).
+2. Head over to the ***General Information*** section.
+3. Copy the ***APPLICATION ID***.
+
+###`OR`
+
+This method can't be used before having the bot invited in a server, so it can't be used before doing so:
+1. In the Discord app, head over to ***User Settings*** > ***Advanced*** and turn on ***Developer Mode*** (if you haven't already).
+2. Right click on your bot.
+3. At the bottom of the menu you will find the ***Copy ID*** button, click it and the applications id will get copied to your clipboard.
+
+## Guild id
+
+1. In the Discord app, head over to ***User Settings*** > ***Advanced*** and turn on ***Developer Mode*** (if you haven't already).
+2. Right click on your server.
+3. At the bottom of the menu you will find the ***Copy ID*** button, click it and the servers id will get copied to your clipboard.
 
 
 
 
 
-
-
-6. how to invite the bot to discord (invite url and stuff)
-   (recommend turning on that the bot can be invited from inside discord)
-
-## How to get a bot token
-
-[Discord Developer Portal](https://discord.com/developers/applications)
-
-## How to get the client id and guild Id
-
-User Settings > Advanced > Developer Mode
-
-
-to ways to get the client id
 
 how to add new slash commands
 
 
 // mirar en Sample-Discord-Bot para como hacer el index y demas
-
 
 // una vez terminado probar con codespaces o algo asi desde principio a final, para ver que funciona
 
