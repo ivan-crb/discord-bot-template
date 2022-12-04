@@ -4,7 +4,7 @@ const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
 
 const token = process.env["CLIENT_TOKEN"]
-const clientId = process.env["APPLICATION_ID"]
+const clientId = process.env["CLIENT_ID"]
 
 const rest = new REST({ version: '10' }).setToken(token);
 rest.get(Routes.applicationCommands(clientId))
