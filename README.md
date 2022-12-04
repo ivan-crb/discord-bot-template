@@ -38,7 +38,7 @@ git push -u origin main;
     - GUILD_ID: The Discord id of the server to test commands in.
 
 The .env should end up looking similar to this:
-```.env
+```
 CLIENT_TOKEN=abcdefghijklmnopqrstuvwxyz-.ABCDEFGHIJKLMNOPQRSTUVWXYZ
 CLIENT_ID=0123456789101112
 GUILD_ID=0123456789101112
