@@ -2,9 +2,8 @@
 A ready-to-go template for a basic discord bot
 
 ## Index
-> [Features](#features)
-
-> [Requirements](#requirements)
+- [Features](#features)
+- [Requirements](#requirements)
 
 
 ## Features
@@ -39,18 +38,15 @@ git push -u origin main;
     - GUILD_ID: The Discord id of the server to test commands in.
 
 The .env should end up looking similar to this:
+```.env
+CLIENT_TOKEN=abcdefghijklmnopqrstuvwxyz-.ABCDEFGHIJKLMNOPQRSTUVWXYZ
+CLIENT_ID=0123456789101112
+GUILD_ID=0123456789101112
 ```
-CLIENT_TOKEN=
-CLIENT_ID=990325594610876457
-GUILD_ID=
-```
-
 
 
 
 4. Install dependencies
-
-
 
 5. how to start the bot
 // install the modules (a ver como hago eso)
@@ -63,7 +59,7 @@ express
 
 ## How to get a token
 
-Discord Developer Portal (poner link)
+[Discord Developer Portal](https://discord.com/developers/applications)
 
 ## How to get
 
