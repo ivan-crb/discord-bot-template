@@ -5,6 +5,10 @@ A ready-to-go template for a basic discord bot
 - [Features](#features)
 - [Requirements](#requirements)
 - [Setup](#setup)
+- [Invite link](#invite-link)
+- [Client token](#client-token)
+- [Client id](#client-id)
+- [Guild id](#guild-id)
 
 ## Features
 
@@ -94,7 +98,7 @@ Take into account that the token can only be viewed once, on creation, so store 
 2. Head over to the ***General Information*** section.
 3. Copy the ***APPLICATION ID***.
 
-###`OR`
+### OR
 
 This method can't be used before having the bot invited in a server, so it can't be used before doing so:
 1. In the Discord app, head over to ***User Settings*** > ***Advanced*** and turn on ***Developer Mode*** (if you haven't already).
