@@ -3,12 +3,14 @@ A ready-to-go template for a basic discord bot
 
 ## Index
 - [Features](#%EF%B8%8F-features)
-- [Requirements](#requirements)
-- [Setup](#setup)
-- [Invite link](#invite-link)
-- [Client token](#client-token)
-- [Client id](#client-id)
-- [Guild id](#guild-id)
+- [Requirements](#%EF%B8%8F-requirements)
+- [Setup](#%EF%B8%8F-setup)
+- [Invite link](#%EF%B8%8F-invite-link)
+- [Creating new commands](#%EF%B8%8F-creating-new-commands)
+- [Client token](#%EF%B8%8F-client-token)
+- [Client id](#%EF%B8%8F-client-id)
+- [Guild id](#%EF%B8%8F-guild-id)
+- [Useful links](#%EF%B8%8F-useful-links)
 
 ## [⬆️](#index) Features
 
@@ -83,6 +85,27 @@ https://discord.com/oauth2/authorize?client_id=<CLIENT_ID>&permissions=<PERMISSI
 
 For easier invitation of the bot to new servers, it is recommended to enable In-app Authorization at [Discord Developer Portal](https://discord.com/developers/applications) > ***Your-App*** > ***OAuth2*** > ***General*** > ***Default Authorization Link*** > ***Authorization Method*** > ***In-app Authorization*** (choose both `bot` and `applications.commands` in the ***Scopes*** section). This allows inviting the bot to new servers from the Discord app itself.
 
+## [⬆️](#index) Creating new commands
+
+1. Create a new `.js` file in the `commands` folder.
+2. Copy the following lines and replace the words between `<` & `>` with the appropiate values.
+```js
+const { SlashCommandBuilder } = require('@discordjs/builders');
+// Any module requires go here
+
+module.exports = {  
+  category: "<command_category>",
+  data: new SlashCommandBuilder()
+    .setName("<command_name")
+    .setDescription("<command_description")
+  ,
+  async execute(interaction, client) {
+    // Your code goes here
+  }
+}
+```
+You can further configure the `SlashCommandBuilder()` class using the properties and methods shown in the [discord.js Documentation](https://discord.js.org/#/docs/builders/main/class/SlashCommandBuilder).
+
 
 ## [⬆️](#index) Client token
 
@@ -111,15 +134,7 @@ This method can't be used before having the bot invited in a server, so it can't
 2. Right click on your server.
 3. At the bottom of the menu you will find the ***Copy ID*** button, click it and the servers id will get copied to your clipboard.
 
-
-
-
-
-
-how to add new slash commands
-
-
-// mirar en Sample-Discord-Bot para como hacer el index y demas
-
-// una vez terminado probar con codespaces o algo asi desde principio a final, para ver que funciona
-
+## [⬆️](#index) Useful links
+- [discord.js Guide](https://v13.discordjs.guide/)
+- [discord.js Documentation](https://discord.js.org/#/docs/main/stable/general/welcome)
+- [Discord Developer Portal](https://discord.com/developers/applications)
