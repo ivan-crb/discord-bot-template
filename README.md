@@ -10,7 +10,7 @@ A ready-to-go template for a basic discord bot
 - [Client id](#client-id)
 - [Guild id](#guild-id)
 
-## Features
+## Features [⬆️](#index)[⬇️](#requirements)
 
 - Built-in slash command handler
 - Dynamic `/help` command
