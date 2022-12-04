@@ -56,14 +56,19 @@ fs
 discord.js
 express
 
+6. how to invite the bot to discord (invite url and stuff)
+   (recommend turning on that the bot can be invited from inside discord)
 
-## How to get a token
+## How to get a bot token
 
 [Discord Developer Portal](https://discord.com/developers/applications)
 
-## How to get
+## How to get the client id and guild Id
 
 User Settings > Advanced > Developer Mode
+
+
+to ways to get the client id
 
 
 // mirar en Sample-Discord-Bot para como hacer el index y demas
