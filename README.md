@@ -2,8 +2,9 @@
 A ready-to-go template for a basic discord bot
 
 ## Index
-    [Features](#features)
-    [Requirements](#requirements)
+> [Features](#features)
+
+> [Requirements](#requirements)
 
 
 ## Features
