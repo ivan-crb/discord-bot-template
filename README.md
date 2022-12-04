@@ -2,7 +2,7 @@
 A ready-to-go template for a basic discord bot
 
 ## Index
-- [Features](#⬆%EF%B8%8F-features)
+- [Features](#%EF%B8%8F-features)
 - [Requirements](#requirements)
 - [Setup](#setup)
 - [Invite link](#invite-link)
@@ -16,12 +16,12 @@ A ready-to-go template for a basic discord bot
 - Dynamic `/help` command
 - Easy to deploy and delete slash commands
 
-## Requirements[⬆️](#index)
+## [⬆️](#index) Requirements
 - Node (16.6 or higher)
 - Git
 - NPM
 
-## Setup[⬆️](#index)
+## [⬆️](#index) Setup
 
 1. Create a directory for the app and clone the repository to it:
 ```bash
@@ -72,7 +72,7 @@ Additionally, `npm start` automatically register the command in all servers befo
 
 Finally, `delete-commands.js` deletes all slash commands for all servers (incase you want to remove an already registered command).
 
-## Invite link [⬆️](#index)
+## [⬆️](#index) Invite link
 
 To get the invite link for the bot, just copy the following url and replace the words between `<` & `>` with the appropiate values.
 ```
@@ -84,7 +84,7 @@ https://discord.com/oauth2/authorize?client_id=<CLIENT_ID>&permissions=<PERMISSI
 For easier invitation of the bot to new servers, it is recommended to enable In-app Authorization at [Discord Developer Portal](https://discord.com/developers/applications) > ***Your-App*** > ***OAuth2*** > ***General*** > ***Default Authorization Link*** > ***Authorization Method*** > ***In-app Authorization*** (choose both `bot` and `applications.commands` in the ***Scopes*** section). This allows inviting the bot to new servers from the Discord app itself.
 
 
-## Client token [⬆️](#index)
+## [⬆️](#index) Client token
 
 1. Select your application in the [Discord Developer Portal](https://discord.com/developers/applications).
 2. Head over to the ***Bot*** section.
@@ -92,7 +92,7 @@ For easier invitation of the bot to new servers, it is recommended to enable In-
 4. Click on ***Reset Token*** and copy the new ***TOKEN***.
 Take into account that the token can only be viewed once, on creation, so store it somewhere safe (you can access it from the `.env` file) if you ever need it in the future.
 
-## Client id [⬆️](#index)
+## [⬆️](#index) Client id
 
 1. Select your application in the [Discord Developer Portal](https://discord.com/developers/applications).
 2. Head over to the ***General Information*** section.
@@ -105,7 +105,7 @@ This method can't be used before having the bot invited in a server, so it can't
 2. Right click on your bot.
 3. At the bottom of the menu you will find the ***Copy ID*** button, click it and the applications id will get copied to your clipboard.
 
-## Guild id [⬆️](#index)
+## [⬆️](#index) Guild id
 
 1. In the Discord app, head over to ***User Settings*** > ***Advanced*** and turn on ***Developer Mode*** (if you haven't already).
 2. Right click on your server.
