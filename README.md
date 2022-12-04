@@ -2,7 +2,7 @@
 A ready-to-go template for a basic discord bot
 
 ## Index
-- [Features](#features)
+- [Features](#⬆️-features)
 - [Requirements](#requirements)
 - [Setup](#setup)
 - [Invite link](#invite-link)
@@ -10,7 +10,7 @@ A ready-to-go template for a basic discord bot
 - [Client id](#client-id)
 - [Guild id](#guild-id)
 
-## Features[⬆️](#index)
+## [⬆️](#index) Features
 
 - Built-in slash command handler
 - Dynamic `/help` command
