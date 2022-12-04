@@ -2,7 +2,7 @@
 A ready-to-go template for a basic discord bot
 
 ## Index
-- [Features](#⬆️-features)
+- [Features](#⬆%EF%B8%8F-features)
 - [Requirements](#requirements)
 - [Setup](#setup)
 - [Invite link](#invite-link)
